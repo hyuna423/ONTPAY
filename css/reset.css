@@ -67,4 +67,7 @@ q:before,q:after {content:"";}
 abbr, acronym {border:0;}
 a{outline:1;   text-decoration:none; color:#666;}
 em { font-style:normal; }
-body { font: 12px /1.4 arial, "맑은 고딕", sans-serif; color:#666; overflow-x:hidden;}
+
+body{
+	color:#222222;
+}
