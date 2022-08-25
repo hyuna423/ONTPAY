@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ONT PAY</title>
 
     <!--meta-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,16 +11,21 @@
 
     <!--js-->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu_scroll.js"></script>
+
 
     <!--bootstrap-->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!--css-->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/moblie.css">
     <link rel="stylesheet" href="css/index_eng.css">
+
 
     <!--favicon--->
     <link href="img/favicon.ico" rel="icon">
@@ -29,9 +34,446 @@
 
 </head>
 
-
-
 <body>
+
+
+
+    <header>
+
+        <div class="hd_all">
+
+            <hgroup>
+
+                <h1><a href=""><img src="img/ONTPAY_Logo 1.png" alt="logo"></a></h1>
+
+            </hgroup>
+
+
+            <nav class="pc_wrap">
+                <ul>
+                    <li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#about01" class="scroll">About</a></li>
+                    <li><a href="#coin" class="scroll">ONTPAY Coin</a></li>
+                    <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                    <li class="nonhov">
+                        <div class="lng">
+                            <span href="">Language <i class="xi-caret-down-min"></i></span>
+                            <ul class="con">
+                                <li><a href="index.html">Kor</a></li>
+                                <li><a href="index_eng.html">Eng</i></a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="abb_d">
+                        <button>
+                            <a href="">App Download</a>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".pc_wrap .lng .con").hide();
+                    $(".pc_wrap .lng").click(function () {
+                        $(".con", this).slideToggle("");
+                    });
+                });
+            </script>
+
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><span></span></label>
+            <label for="active" class="close"></label>
+
+            <nav class="wrapper">
+
+                <ul>
+                    <li><a href="#home" class="scroll">Home</a></li>
+                    <li><a href="#about01" class="scroll">About</a></li>
+                    <li><a href="#coin" class="scroll">ONTPAY Coin</a></li>
+                    <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                    <li class="nonhov">
+                        <div class="lng">
+                            <a href="#">Language <i class="xi-caret-down-min"></i></a>
+                            <ul class="con">
+                                <li><a href="index.html">Kor</a></li>
+                                <li><a href="index_eng.html">Eng</i></a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="abb_d">
+                        <button>
+                            <a href="#">App Download</a>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="home">
+            <div class="home_area container">
+                <div class="home_txt">
+                    <h2>THE <br> PAYMENT SYSTEM</h2>
+                    <span>ONT PAY is a cryptocurrency platform<br> used for payments and transactions on offline
+                        services.</span>
+                </div>
+                <div class="home_btn">
+                    <div class="first_btn">
+                        <button><a href="">Whitepaper</a></button>
+                        <button><a href="">Wallet</a></button>
+                    </div>
+                    <div class="second_btn">
+                        <button><a href="">
+                                <i class="xi-google-play"></i> &nbsp; Google play</a>
+                        </button>
+                        <button>
+                            <a href=""><i class="xi-apple"></i> &nbsp; App Store</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about01">
+            <div class="about01_area container">
+                <div class="about01_box">
+                    <div class="about01_txt">
+                        <h3>About <span>ONT PAY</span></h3>
+                        <p>ONTPAY aims to establish a payment and customer reward platform <br> for convenience stores and
+                            franchises optimized for online commerce.<br>
+                            Research & Market, a global market research company, analyzed that the cryptocurrency<br> ATM
+                            market will grow to more than 150 billion won in the next three years.
+                            Accordingly,<br> ONTPAY will generate secure OTP through the app, and ONTPAY, which is held<br>
+                            through ATM devices at convenience stores nationwide, will easily cash in.
+                            <br><br>
+                            If you need cash both domestically and abroad, you can easily and quickly cash ONPAY,<br> which
+                            holds low fees on behalf of high-fee bureaux and banks.
+                        </p>
+                    </div>
+                    <div class="about01_img">
+                        <img src="img/info_pay.png" alt="info_pay">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about02">
+            <div class="about02_area container">
+                <h3><span>ONTPAY</span>Blockchain Systems
+                </h3>
+                <p>We would like to implement the payment payment service considering user convenience and safety.
+                </p>
+
+                <div class="about02_box">
+                    <div class="about02_b b01">
+                        <img src="img/icon3.png" alt="icon1">
+                        <h4>User-centric services</h4>
+
+                        <span>
+                            <h4>User-centric services</h4>
+                            <p>Most cryptocurrencies do not deviate from the conceptual level, so it takes a lot of learning to use the actual UI and UX.
+                                ONTPAY wants to lower barriers to entry so that anyone can easily access cryptocurrency by providing a user-friendly platform.
+                            </p>
+                        </span>
+                    </div>
+
+                    <div class="about02_b b02">
+                        <img src="img/icon1.png" alt="icon1">
+                        <h4>New Payment System
+                        </h4>
+
+                        <span>
+                            <h4>New Payment System
+                            </h4>
+                            <p>
+                                
+ONTPAY aims to create a new payment system environment that will satisfy both merchants and customers at a lower price than traditional card fees with payment coins available at franchises. <br>
+Also, cash withdrawals through ATM devices are scheduled.
+                            </p>
+                        </span>
+                    </div>
+
+                    <div class="about02_b b03">
+                        <img src="img/icon2.png" alt="icon1">
+                        <h4>ONT Wallet Multiple<br> Cryptocurrency Support System
+                        </h4>
+
+                        <span>
+                            <h4>ONT Wallet Multiple<br> Cryptocurrency Support System</h4>
+                            <p>If ONT PAY is popularized as a payment coin, it will support multiple cryptocurrencies such as USDT, BTC, ETH, and TRC coins as paymentable coins in the long run.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <secton id="about03">
+            <div class="about03_area container">
+                <h3><span>ONTPAY</span> Key Features</h3>
+                <div class="ab03_txt">
+                    <ul>
+                        <li>
+                            <h4>
+                                <img src="img/ontpay_icon1.png" alt="">
+                                Merchant payment service
+                            </h4>
+                            <p>Currently, high fees and late settlement are a problem when paying with a credit card at a franchise store.
+                                ONTPAY wants to solve existing problems by combining blockchain technology with payment system.
+                                Using cryptocurrency, users can receive rewards for low fees, real-time settlement, and part of the amount used by ONTPAY. It is a business model that both merchants and users are satisfied with.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <img src="img/ontpay_icon2.png" alt="">
+                                ATM withdrawal service
+                            </h4>
+                            <p>
+                                ATM withdrawal service ONTPAY is providing a service to withdraw cryptocurrency in cash through ATM devices installed in 500,000 convenience stores nationwide. It is cheaper than the existing fee and can be withdrawn without a card, so anyone can easily withdraw.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <img src="img/ontpay_icon3.png" alt="">
+                                Global Exchange Service
+                            </h4>
+                            <p>
+                                If cash is needed not only in Korea but also abroad, ONT PAY, which has low fees, can be easily and quickly cashed in on behalf of currency exchange or banks with high fees.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <img src="img/ontpay_icon4.png" alt="">
+                                User-centric platform services
+                            </h4>
+                            <p>
+                                It is a unique cryptocurrency service that is used for payment, compensation, and transactions on online and mobile services in the ONTPAY app. Based on the implementation of the best coin payment mobile wallet considering convenience and safety, if many users use the platform from Japan and China to the United States and Europe, they will enter large marts and shopping malls as well as merchants.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <span class="point">* The ONTPAY platform is currently under development.</span>
+            </div>
+        </secton>
+
+
+        <section id="coin">
+            <div class="coin_area container">
+                <h3><span>ONT PAY</span> Economy</h3>
+
+                <p>ONTPAY aims to create its own cryptocurrency platform for online and mobile services payments, rewards, and transactions. Through sharing the interests of blockchain-based DApp service providers and service users, we will realize a shared economy ecosystem that grows together.
+                </p>
+                <div class="coin_box">
+                    <div class="coin_r">
+                        <ul class="graph">
+                            <li>
+                                <h5>Coin Name</h5> ONT PAY
+                            </li>
+                            <li>
+                                <h5>Symbol</h5> ONT CH
+                            </li>
+                            <li>
+                                <h5>Protocol</h5> ERC-20
+                            </li>
+                            <li>
+                                <h5>Total Supply</h5> 300,000,000
+                            </li>
+                        </ul>
+                        <img src="img/ontpay_economy.png" alt="">
+                    </div>
+                    <div class="coin_l">
+                        <ul>
+                            <li><span></span><b>초기 기여자(Early Contributors)</b>5%</li>
+                            <li><span></span><b>설립자 & 팀(Founders & Team)</b>10%</li>
+                            <li><span></span><b>마케팅(Marketing)</b>10%</li>
+                            <li><span></span><b>토큰세일(Token Sale)</b>10%</li>
+                            <li><span></span><b>회사 보유분(Reserves)</b>15%</li>
+                            <li><span></span><b>리워드(Rewards)</b>50%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="roadmap">
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#DCE0EB" fill-opacity="1"
+                    d="M0,32L34.3,64C68.6,96,137,160,206,181.3C274.3,203,343,181,411,149.3C480,117,549,75,617,80C685.7,85,754,139,823,133.3C891.4,128,960,64,1029,80C1097.1,96,1166,192,1234,218.7C1302.9,245,1371,203,1406,181.3L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                </path>
+            </svg>
+
+            <div class="roadmap_area container">
+                <h3>Roadmap</h3>
+                <div class="road_box">
+                    <div class="road fi">
+                        <h5>2021</h5>
+                        <ul>
+                            <li>
+                                <h6>1Q</h6>
+                                <p>Establishment of project and foundation
+                                </p>
+                            </li>
+                            <li>
+                                <h6>2Q</h6>
+                                <p>Revealing Whitepaper Ver 1.0
+
+                                </p>
+                            </li>
+                            <li>
+                                <h6>3Q</h6>
+                                <p>ONT PAY materialization work
+
+                                </p>
+                            </li>
+                            <li>
+                                <h6>4Q</h6>
+                                <p>ONT PAY Wallet Production Progress
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="road se">
+                        <h5>2022</h5>
+                        <ul>
+                            <li>
+                                <h6>1Q</h6>
+                                <p>Initiate production of the ONT PAY payment system service
+                                </p>
+                            </li>
+                            <li>
+                                <h6>2Q</h6>
+                                <p>Launch the ONT PAY Wallet service
+
+                                </p>
+                            </li>
+                            <li>
+                                <h6>3Q</h6>
+                                <p>ONT PAY Global Exchange Listed
+
+                                </p>
+                            </li>
+                            <li>
+                                <h6>4Q</h6>
+                                <p>Initiate construction of NFT platform based on ONT PAY
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="road th">
+                        <h5>2021</h5>
+                        <ul>
+                            <li>
+                                <h6>1Q</h6>
+                                <p>ONT PAY-based NFT Platform Beta Service Test
+                                </p>
+                            </li>
+                            <li>
+                                <h6>2Q</h6>
+                                <p>Whitepaper Ver 2.0 Revealed
+
+                                </p>
+                            </li>
+                            <li>
+                                <h6>3Q</h6>
+                                <p>New Road Map Announcement
+
+                                </p>
+                            </li>
+                            <li>
+                                <h6>4Q</h6>
+                                <p>Launch of ONT PAY-based NFT platform service
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="contact_area container">
+                <h3>Get In Touch</h3>
+
+                <div class="con_box">
+                    <div class="con_send">
+                        <h4>Send a Message</h4>
+                        <form class="gform" action="" data-email="" method="">
+                            <input type="email" value placeholder="E-mail" class="email" required>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <input type="submit" value="SEND" class="send">
+                        </form>
+                    </div>
+                    <div class="con_Info">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>
+                                <span><i class="xi-profile"></i> CEO</span>
+                                <p> Jung Dohui</p>
+                            </li>
+
+                            <li>
+                                <span><i class="xi-mobile"></i> Tel</span>
+                                <p> 000 000 0000</p>
+                            </li>
+
+                            <li>
+                                <span><i class="xi-building"></i> Address</span>
+                                <p> 11F,15, Teheran-ro 82-gil, Gangnam-gu, Seoul</p>
+                            </li>
+                        </ul>
+                        <div class="con_sns">
+                            <a href="https://t.me/ONTPAYGlobalpaymentsystem
+                        "><i class="xi-telegram"></i></a>
+                            <a href="https://open.kakao.com/o/simWUwxe
+                        " class="nomargin"><i class="xi-kakaotalk"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_area container">
+            <h1><a href="#"><img src="img/ONTPAY_Logo 1.png" alt="flogo"></a></h1>
+            <span>Copyright © 2020 ONTPAY All Rights Reserved
+            </span>
+            <div class="f_sns">
+                <a href="https://t.me/ONTPAYGlobalpaymentsystem
+                        "><i class="xi-telegram"></i></a>
+                <a href="https://open.kakao.com/o/simWUwxe
+                        "><i class="xi-kakaotalk"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
