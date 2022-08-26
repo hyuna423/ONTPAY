@@ -2,7 +2,67 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+    #home::before {
+        right: 0%;
+    }
 
     #about02 .about02_area p {
         padding: 40px 20px;
+    }
+
+    #roadmap .roadmap_area .road_box .road ul {
+        padding: 50px 20px 50px 50px;
+    }
+
+    /*데탑*/
+@media screen and (max-width:1440px) {
+
+  
+  }
+  
+  
+  
+  
+  /*노트북*/
+  @media screen and (max-width:1024px) {
+
+  }
+  
+  
+  
+  /*아이패드 (768px)*/
+  @media screen and (max-width:991px) {
+  
+  }
+  
+  
+    /*모바일*/
+  
+    @media screen and (max-width:767px) {
+ 
+    }
+  
+  
+    /*모바일2*/
+  
+  
+    @media screen and (max-width:576px) {
+    
+  
+  }
+  
+  
+  
+    /*모바일3 갤럭시*/
+  
+    @media screen and (max-width:425px) {
+  
+  
+    }
+  
+  
+  
+    /*모바일4 아이폰*/
+    @media screen and (max-width:375px) {
+  
     }

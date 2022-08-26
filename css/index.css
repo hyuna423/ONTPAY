@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +21,15 @@ address {
 
 body {
   width: 100%;
-  overflow: hidden;
-  overflow-y: scroll;
+  font-family:'GmarketSansMedium' ;
+}
+
+html, body {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hideen;
+  /* 이외의 브라우저 */
+  overscroll-behavior: none;
 }
 
 
@@ -139,6 +153,7 @@ header .hd_all {
   position: relative;
   z-index: 0;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .pc_wrap ul li a::after {
@@ -208,8 +223,7 @@ header .hd_all {
 .menu-btn {
   position: absolute;
   z-index: 2;
-  right: 20px;
-  /*left: 20px; */
+  right: 5%;
   top: 20px;
   height: 50px;
   width: 50px;
@@ -218,10 +232,6 @@ header .hd_all {
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  /*color: #fff;*/
-  /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
   transition: all 0.3s ease-in-out;
 }
 
@@ -272,16 +282,17 @@ header .hd_all {
 .wrapper ul {
   position: absolute;
   top: 60%;
-  left: 0;
-  height: 90%;
-  width: 100%;
-  transform: translate(0, -50%);
+  left: 30%;
+  height: 100%;
+  width: 60%;
+  transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
+  overflow:hidden;
 }
 
 .wrapper ul li {
-  height: 10%;
+  height: 7%;
   margin: 15px auto;
   text-align: center;
   width: 100%;
@@ -374,7 +385,7 @@ input[type="checkbox"] {
 
 
 /* lan */
-.pc_wrap .lng{
+.pc_wrap .lng, .wrapper .lng{
   position: relative;
 }
 
@@ -396,7 +407,7 @@ li.nonhov a:before {
   cursor: pointer;
 }
 
-.lng .con {
+.pc_wrap .lng .con {
   position: absolute;
   width: 100%;
   height: 100px;
@@ -412,7 +423,7 @@ li.nonhov a:before {
   transition: all .5s ease-in;
 }
 
-.lng .con li {
+.pc_wrap .lng .con li {
   display: block;
   clear: both;
   width: 100%;
@@ -421,7 +432,8 @@ li.nonhov a:before {
   padding: 20px;
 }
 
-.lng .con li a {
+
+.pc_wrap .lng .con li a {
   display: block;
   max-width: 100%;
   float: none;
@@ -432,16 +444,46 @@ li.nonhov a:before {
 
 }
 
-.lng .con li a:hover {
+.pc_wrap .lng .con li a:hover {
   font-weight: bold;
 }
 
-header .hd_all .pc_wrap ul li.abb_d:hover a::after,
-header .hd_all .pc_wrap ul li.abb_d a:hover::before {
+
+
+.wrapper .lng {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.wrapper .lng .con {
+  position: absolute;
+  top: 70%;
+  left: 52%;
+  width: 16%;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.wrapper ul li.nonhov .lng ul.con  li a{
+  color: #222222;
+  font-size: 1rem;
+  width:95%;
+  padding: 5% 0;
+}
+
+.wrapper .lng ul.con li {
+  height: 20%;
+}
+
+
+
+header .hd_all ul li.abb_d:hover a::after,
+header .hd_all ul li.abb_d a:hover::before {
   display: none;
 }
 
-header .hd_all .pc_wrap ul li button {
+header .hd_all ul li button {
   padding: 15px 20px;
   background-color: #9e83d7;
   border: none;
@@ -451,11 +493,11 @@ header .hd_all .pc_wrap ul li button {
   position: relative;
 }
 
-header .hd_all .pc_wrap ul li button a {
+header .hd_all ul li button a {
   color: #fff;
 }
 
-header .hd_all .pc_wrap ul li button::after {
+header .hd_all ul li button::after {
   content: "soon";
   position: absolute;
   top: -10px;
@@ -475,10 +517,25 @@ header .hd_all .pc_wrap ul li button::after {
   background: url(../img/main.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
+  position: relative;
+}
+
+#home::before{
+  content: "";
+  background: url(../img/main_phone.png)no-repeat;
+  width: 600px;
+  height:1077px;
+  position: absolute;
+  right: 13%;
 }
 
 #home .home_area {
-  padding: 10% 0;
+  position:absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left:10%;
+  transform: translateY(-50%);
 }
 
 #home .home_area .home_txt {
@@ -487,7 +544,8 @@ header .hd_all .pc_wrap ul li button::after {
 
 #home .home_area .home_txt h2 {
   color: #fff;
-  font-size: 7em;
+  font-size: 5em;
+  padding-bottom: 2%;
 }
 
 #home .home_area .home_txt span {
@@ -514,7 +572,7 @@ header .hd_all .pc_wrap ul li button::after {
 }
 
 #home .home_area .home_btn button a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -578,10 +636,11 @@ header .hd_all .pc_wrap ul li button::after {
 
 #about01 {
   width: 100%;
-  overflow: hidden;
+
   background-color: #DCE0EB;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 #about01::before {
@@ -678,6 +737,7 @@ header .hd_all .pc_wrap ul li button::after {
 
 #about02 .about02_area p {
   padding: 40px 0;
+  font-size: 1.5em;
 }
 
 #about02 .about02_area .about02_box {
@@ -731,6 +791,10 @@ header .hd_all .pc_wrap ul li button::after {
   visibility: hidden;
 }
 
+#about02 .about02_area .about02_box .about02_b span p {
+  font-size: 1rem;
+}
+
 #about02 .about02_area .about02_box .about02_b span h4 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -747,10 +811,9 @@ header .hd_all .pc_wrap ul li button::after {
 
 #about03 {
   width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
-  ;
-  z-index: 1;
 }
 
 #about03:after {
@@ -805,7 +868,6 @@ header .hd_all .pc_wrap ul li button::after {
   font-size: 1.2em;
   position: relative;
   width: 30%;
-
 }
 
 #about03 .about03_area .ab03_txt ul li h4:after {
@@ -816,11 +878,11 @@ header .hd_all .pc_wrap ul li button::after {
   position: absolute;
   right: -48%;
   top: 44%;
-
 }
 
 #about03 .about03_area .ab03_txt ul li h4 img {
   max-width: 100%;
+  margin-right: 3%;
 }
 
 #about03 .about03_area .ab03_txt ul li p {
@@ -1140,7 +1202,7 @@ header .hd_all .pc_wrap ul li button::after {
 #contact .contact_area .con_box .con_send form input, #contact .contact_area .con_box .con_send form textarea{
   border: none;
   border-bottom: 2px solid #8f8f8fa6;
-  padding: 1%;
+  padding: 5%;
 }
 
 #contact .contact_area .con_box .con_send form textarea{
